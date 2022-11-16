@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: url("/SurveyForm/images/alina-grubnyak-ZiQkhI7417A-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1,
+.note {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-top: 1em;
+}
+
+.note {
+    margin-top: 0.5em;
+    font-stretch: extra-expanded;
+    font-style: oblique;
+    font-size: larger;
+    margin-bottom: 2em;
+}
+
+.section {
+    background-color: #181426;
+    opacity: 95%;
+    margin-left: 23%;
+    color: #ffffff;
+    margin-right: 23%;
+    padding: 2em 2em 1em 2em;
+}
+
+.com {
+    font-weight: 550;
+}
+
+.box {
+    width: 95%;
+    border-radius: 0.3em;
+    border-color: black;
+    padding: 0.5em;
+    font-size: medium;
+    margin-top: 0.5em;
+}
+
+.btns {
+    background: #fcd900;
+    background-image: -webkit-linear-gradient(top, #fcd900, #e8630a);
+    background-image: -moz-linear-gradient(top, #fcd900, #e8630a);
+    background-image: -ms-linear-gradient(top, #fcd900, #e8630a);
+    background-image: -o-linear-gradient(top, #fcd900, #e8630a);
+    background-image: linear-gradient(to bottom, #fcd900, #e8630a);
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: 98%;
+}
+
+.btns:hover {
+    background: #e8630a;
+    background-image: -webkit-linear-gradient(top, #e8630a, #f37878);
+    background-image: -moz-linear-gradient(top, #e8630a, #f37878);
+    background-image: -ms-linear-gradient(top, #e8630a, #f37878);
+    background-image: -o-linear-gradient(top, #e8630a, #f37878);
+    background-image: linear-gradient(to bottom, #e8630a, #f37878);
+    text-decoration: none;
+}

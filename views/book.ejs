@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bookcss/styles.css" />
+    <link rel="stylesheet" href="/bookcss/responsive.css" />
+    <title>ScheduleUpdate-Form</title>
+  </head>
+
+  <body>
+    <h1>Update the Schedule</h1>
+    <p class="note">Thank you for taking the time to ease the process</p>
+
+    <div class="section">
+      <form action="/book" method="post">
+        <label class="com">Name</label>
+        <input
+          type="text"
+          class="name box"
+          name="pname"
+          placeholder="Enter your name"
+        /><br /><br />
+        <label class="com">Email</label>
+        <input
+          type="email"
+          class="email box"
+          name="email"
+          placeholder="Enter your Email"
+        /><br /><br />
+        <label class="com">Password</label>
+        <input
+          type="password"
+          class="email box"
+          name="pass"
+          placeholder="Enter your Password"
+        /><br /><br />
+        <label for="role" class="com">Choose the Lecture halls:</label>
+        <select name="hall" class="box" id="role">
+          <option value="opt1">LT1</option>
+          <option value="opt2">LT2</option>
+          <option value="opt3">LT3</option>
+          <option value="opt4">LT4</option></select
+        ><br /><br />
+
+        <label for="feature" class="com">Select your slot:</label>
+        <select name="time" class="box" id="feature">
+          <option value="opt1">9:00AM-10:00AM</option>
+          <option value="opt2">10:00AM-11:00AM</option>
+          <option value="opt3">11:00AM-12:00PM</option>
+          <option value="opt3">12:00PM-1:00PM</option>
+          <option value="opt3">1:00AM-2:00PM</option>
+          <option value="opt3">2:00AM-3:00PM</option>
+          <option value="opt3">3:00AM-4:00PM</option>
+          <option value="opt3">4:00AM-5:00PM</option>
+          <option value="opt3">5:00AM-6:00PM</option>
+          <option value="opt3">6:00AM-7:00PM</option></select
+        ><br /><br />
+
+        <label for="" class="com">Purpose of engaging the lecture hall:</label
+        ><br />
+        <input
+          type="text"
+          class="name box"
+          name="purpose"
+          placeholder="Purpose"
+        /><br /><br />
+        <button type="submit" class="btns">Submit</button>
+        <br /><br />
+      </form>
+    </div>
+  </body>
+</html>
