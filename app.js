@@ -19,45 +19,35 @@ const facSchema = {
 
 const Faculty = mongoose.model("Faculty", facSchema);
 
-const ragini = new Faculty({
-  name: "Ragini Pancholi",
-  email: "raginipancholi@smvdu.ac.in",
-  password: ")()()ragini2022",
-});
+// const ragini = new Faculty({
+//   name: "Ragini Pancholi",
+//   email: "raginipancholi@smvdu.ac.in",
+//   password: ")()()ragini2022",
+// });
 
-ragini.save();
+// const simran = new Faculty({
+//   name: "Simran",
+//   email: "simran@smvdu.ac.in",
+//   password: "&&**simran**2022",
+// });
 
-const simran = new Faculty({
-  name: "Simran",
-  email: "simran@smvdu.ac.in",
-  password: "&&**simran**2022",
-});
+// const harshita = new Faculty({
+//   name: "Harshita Agarwal",
+//   email: "harshitaagarwal@smvdu.ac.in",
+//   password: "<<><harshita<><>2022",
+// });
 
-simran.save();
+// const jay = new Faculty({
+//   name: "Jay Bhatt",
+//   email: "jaybhatt@smvdu.ac.in",
+//   password: "jay&&^^^2022",
+// });
 
-const harshita = new Faculty({
-  name: "Harshita Agarwal",
-  email: "harshitaagarwal@smvdu.ac.in",
-  password: "<<><harshita<><>2022",
-});
-
-harshita.save();
-
-const jay = new Faculty({
-  name: "Jay Bhatt",
-  email: "jaybhatt@smvdu.ac.in",
-  password: "jay&&^^^2022",
-});
-
-jay.save();
-
-const karan = new Faculty({
-  name: "Karan Chandel",
-  email: "karanchandel@smvdu.ac.in",
-  password: "karan$$##@@2022",
-});
-
-karan.save();
+// const karan = new Faculty({
+//   name: "Karan Chandel",
+//   email: "karanchandel@smvdu.ac.in",
+//   password: "karan$$##@@2022",
+// });
 
 app.get("/", (req, res) => {
   res.render("home");
@@ -83,15 +73,16 @@ app.post("/book", (req, res) => {
   let time = req.body.time;
   let hall = req.body.hall;
 
-  // Faculty.findOne(
-  //   { name: name, email: email, password: password },
-  //   function (err, found) {
-  //     if (err) {
-  //       console.log("Credentials not found!");
-  //     } else {
-  //     }
-  //   }
-  // );
+  Faculty.findOne(
+    { name: name, email: email, password: password },
+    function (err, docs) {
+      if (err || docs==null) {
+        res.render("error");
+      } else {
+        res.render("updated");
+      }
+    }
+  );
 });
 
 app.listen(3000, function (req, res) {

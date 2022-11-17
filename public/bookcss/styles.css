@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("/SurveyForm/images/alina-grubnyak-ZiQkhI7417A-unsplash.jpg");
+    background-image: radial-gradient(#F1A661, #D989B5);
     background-repeat: no-repeat;
     background-size: cover;
 }

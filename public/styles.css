@@ -7,20 +7,19 @@
 
 .nav-bar {
     display: flex;
-    background-color: #EEEEEE;
+    background-color: #FDEEDC;
     color: #282c3f;
     position: sticky;
-
 }
 
-.logo img{
-    width:15%;
-} 
+.logo img {
+    width: 15%;
+}
 
 .nav-list {
     width: 80%;
-    padding-top: 1.3em;
-    padding-bottom: 1.3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .list-items {
@@ -28,14 +27,14 @@
     width: 100%;
     justify-content: space-around;
     list-style: none;
-    font-size:large;
+    font-size: large;
 }
 
 .main-content {
     height: 50%;
 }
 
-ul li a{
+ul li a {
     text-decoration: none;
     color: #000000;
 }
@@ -48,16 +47,10 @@ ul li a:hover {
 }
 
 .main-img {
-    background-image: linear-gradient(rgba(0, 0.2, 0, 0.3), rgba(0, 0.2, 0, 0.3)), url("./images/smvdu.jpg");
+    background-image: linear-gradient(rgba(0, 0.4, 0, 0.4), rgba(0, 0.4, 0, 0.4)), url("./images/smvdu.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/* Add the blur effect  */
-.blur {
-    filter: blur(0.8px);
-    -webkit-filter: blur(0.8px);
 }
 
 .main-txt {
@@ -66,195 +59,30 @@ ul li a:hover {
 
 .heading {
     font-size: 4.3em;
-    padding: 13% 0% 1% 0%;
+    padding: 15% 0% 1% 0%;
 }
 
 .text-change {
     font-size: 2em;
-    padding-bottom: 17%;
+    padding-bottom: 15%;
+    color: #eeeeee;
 }
 
-footer{
+footer {
     display: flex;
     text-align: center;
     justify-content: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
-.foot{
+.foot {
     width: 100%;
-    background-color: #EEEEEE;
+    background-color: #eeeeee;
 }
 
 .head,
-.text-change,
-.button-center,
-.side-head,
-.side-para,
-.time,
-.head-order,
-.menu-head,
-.underline,
-.button-dish {
+.text-change {
     display: flex;
     justify-content: center;
-}
-
-.btn {
-    background: #ffb200;
-    background-image: -webkit-linear-gradient(top, #ffb200, #ef4f5f);
-    background-image: -moz-linear-gradient(top, #ffb200, #ef4f5f);
-    background-image: -ms-linear-gradient(top, #ffb200, #ef4f5f);
-    background-image: -o-linear-gradient(top, #ffb200, #ef4f5f);
-    background-image: linear-gradient(to bottom, #ffb200, #ef4f5f);
-    -webkit-border-radius: 28;
-    -moz-border-radius: 28;
-    border-radius: 28px;
-    padding: 10px 20px 10px 20px;
-    border-color: #000000;
-    color: #000000;
-    font-size: 20px;
-    text-decoration: none;
-    font-family: Arial;
-}
-
-.btnsty {
-    color: #000000;
-    font-size: 20px;
-    text-decoration: none;
-    font-family: Arial;
-}
-
-.btn:hover {
-    background: #ef4f5f;
-    background-image: -webkit-linear-gradient(top, #ef4f5f, #ffb200);
-    background-image: -moz-linear-gradient(top, #ef4f5f, #ffb200);
-    background-image: -ms-linear-gradient(top, #ef4f5f, #ffb200);
-    background-image: -o-linear-gradient(top, #ef4f5f, #ffb200);
-    background-image: linear-gradient(to bottom, #ef4f5f, #ffb200);
-    cursor: pointer;
-}
-
-.btns {
-    margin: 0.5% 0% 2% 0%;
-}
-
-.main-content2 {
-    background-color: #f9f2ed;
-}
-
-.icons {
-    padding: 5% 0% 5% 0%;
-    display: flex;
-    color: #fc8019;
-    width: 100%;
-}
-
-.icons div {
-    width: 33.33%;
-    padding: 0% 0% 0% 5%;
-}
-
-.icons i {
-    padding-bottom: 0.3em;
-}
-
-.ic-midhead {
-    font-size: large;
-    font-weight: bolder;
-    margin-bottom: 0.8em;
-    color: #000000;
-    font-stretch: extra-expanded;
-}
-
-.ic-mid {
-    width: 80%;
-    color: #fac669;
-    font-weight: 600;
-    font-size: small;
-    font-stretch: extra-expanded;
-}
-
-.pocket {
-    display: flex;
-    width: 100%;
-}
-
-.side-text {
-    width: 80%;
-    padding: 18% 0% 0% 0%;
-}
-
-.side-head {
-    font-size: 3em;
-    font-weight: bolder;
-    color: #282c3f;
-}
-
-.side-para {
-    font-size: 1em;
-    color: #7e808c;
-}
-
-.bor {
-    background-image: linear-gradient(300deg, #ff7f3f, #f94892);
-    background-repeat: no-repeat;
-}
-
-.head-order {
-    font-size: 3em;
-}
-
-.time {
-    color: #7e808c;
-}
-
-.list-order {
-    margin-top: 3em;
-    padding: 2% 0% 0% 35%;
-}
-
-.val {
-    font-size: larger;
-}
-
-.box {
-    border-radius: 3em;
-    border-color: #000000;
-    height: 2.5em;
-    width: 50%;
-    margin: 0.5em 0em 0.5em 0em;
-    padding-left: 1em;
-}
-
-.menu {
-    background-image: linear-gradient(180deg, #f94892, #f87654);
-}
-
-.menu-head {
-    padding-top: 3%;
-    font-size: x-large;
-}
-
-.line {
-    height: 0.12em;
-    width: 13%;
-    background-color: #ffb200;
-    margin-bottom: 4%;
-    border-radius: 3em;
-}
-
-.line-change {
-    width: 5%;
-}
-
-.button-dish {
-    justify-content: space-around;
-    margin-bottom: 3%;
-}
-
-.cards {
-    display: flex;
-    justify-content: space-around;
 }
