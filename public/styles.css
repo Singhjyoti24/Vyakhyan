@@ -98,3 +98,52 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+.vertical-list {
+    padding: 5% 0% 9.5% 0%;
+    background-image: radial-gradient(#f1a661, #d989b5);
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.vhead {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.note {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #c4122f;
+    padding-left: 6%;
+    padding-right: 4%;
+    /* background-image: radial-gradient(#f1a661, #d989b5); */
+}
+
+.vhead {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.first a,
+.second a,
+.third a,
+.fourth a {
+    text-decoration: none;
+    color: #000000;
+    font-size: larger;
+}
+
+.first a:hover,
+.second a:hover,
+.third a:hover,
+.fourth a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #3b185f;
+    font-weight: bold;
+}

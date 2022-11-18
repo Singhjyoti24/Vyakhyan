@@ -1,32 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Poppins:wght@400&display=swap"
-      rel="stylesheet"
-    />
-    <!-- css -->
-    <link rel="stylesheet" href="/styles.css" />
-    <title>Check status</title>
-  </head>
-  <body style="overflow-x: hidden">
-    <nav class="nav-bar">
-      <div class="nav-list" style="width: 100%">
-        <ul class="items">
-          <li><a href="lt1">LT 1</a></li>
-          <li><a href="lt2">LT 2</a></li>
-          <li><a href="lt3">LT 3</a></li>
-          <li><a href="lt4">LT 4</a></li>
-        </ul>
-      </div>
-    </nav>
-  </body>
-</html>
+<%- include('partials/header') %>
+
+<div class="vertical-list">
+  <div class="vhead">
+    <p>Check the status of Lecture theatres</p>
+  </div>
+  <div class="first">
+    <a href="lt1">LT 1 STATUS</a>
+  </div>
+  <div class="second">
+    <a href="lt2">LT 2 STATUS</a>
+  </div>
+  <div class="third">
+    <a href="lt3">LT 3 STATUS</a>
+  </div>
+  <div class="fourth">
+    <a href="lt4">LT 4 STATUS</a>
+  </div>
+</div>
+
+<div class="note">
+  <p>Note: Only faculty members can update their respective schedules and other events can take place in available slot only. Events cordinators can't update engaged slots of professors.</p>
+</div>
+
+<footer class="foot">Copyright © SMVDU Hackathon 2022.</footer>
