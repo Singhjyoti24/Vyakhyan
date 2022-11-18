@@ -65,6 +65,22 @@ app.get("/book", (req, res) => {
   res.render("book");
 });
 
+app.get("/lt1", (req, res) => {
+  res.render("lt1");
+});
+
+app.get("/lt2", (req, res) => {
+  res.render("lt2");
+});
+
+app.get("/lt3", (req, res) => {
+  res.render("lt3");
+});
+
+app.get("/lt4", (req, res) => {
+  res.render("lt4");
+});
+
 app.post("/book", (req, res) => {
   let name = req.body.pname;
   let email = req.body.email;
@@ -76,7 +92,7 @@ app.post("/book", (req, res) => {
   Faculty.findOne(
     { name: name, email: email, password: password },
     function (err, docs) {
-      if (err || docs==null) {
+      if (err || docs == null) {
         res.render("error");
       } else {
         res.render("updated");

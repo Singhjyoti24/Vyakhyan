@@ -7,7 +7,7 @@
 
 .nav-bar {
     display: flex;
-    background-color: #FDEEDC;
+    background-color: #fdeedc;
     color: #282c3f;
     position: sticky;
 }
@@ -28,6 +28,18 @@
     justify-content: space-around;
     list-style: none;
     font-size: large;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
 }
 
 .main-content {
