@@ -1,7 +1,16 @@
 <%- include('partials/header') %>
 
-<h1>Lecture Hall 4 status</h1>
+<h2>Status Update</h2>
+<% try{ %> 
+<% hall.forEach(function(user){ %>
+<h4 style="color: red"><%= user %></h4>
+<% }); %> 
+<% }catch(err){ %>
+  <h5 style="color: red;">No updates availabel</h5>
+<% } %>
+<br />
 
+<h1>Lecture Hall 4 status</h1>
 <table class="table-1">
   <tr>
     <th>Day/Time</th>
@@ -13,6 +22,8 @@
     <th>2:00-3:00</th>
     <th>3:00-4:00</th>
     <th>4:00-5:00</th>
+    <th>5:00-6:00</th>
+    <th>6:00-7:00</th>
   </tr>
   <tr>
     <th>MONDAY</th>
@@ -24,6 +35,8 @@
     <td>Elective III Departmental (ECE)</td>
     <td>Optical Fibre Comm (ECE)</td>
     <td>Entrepreneurship Management (ECE)</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <th>TUESDAY</th>
@@ -35,6 +48,8 @@
     <td>Digital Image Processing (CSE)</td>
     <td>Wireless Networks (CSE)</td>
     <td>Entrepreneurship Management (ECE)</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <th>WEDNESDAY</th>
@@ -46,6 +61,8 @@
     <td></td>
     <td>Elective IV Departmental (ECE)</td>
     <td>Entrepreneurship Management (ECE)</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <th>THURSDAY</th>
@@ -56,6 +73,8 @@
     <td>LUNCH TIME</td>
     <td>Wireless Networks (CSE)</td>
     <td>HPC (CSE)</td>
+    <td></td>
+    <td></td>
     <td></td>
   </tr>
   <tr>
@@ -68,5 +87,9 @@
     <td></td>
     <td></td>
     <td></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
+
+

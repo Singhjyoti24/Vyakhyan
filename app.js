@@ -18,7 +18,6 @@ const facSchema = {
 };
 
 const Faculty = mongoose.model("Faculty", facSchema);
-
 // const ragini = new Faculty({
 //   name: "Ragini Pancholi",
 //   email: "raginipancholi@smvdu.ac.in",
@@ -81,21 +80,37 @@ app.get("/lt4", (req, res) => {
   res.render("lt4");
 });
 
+let purpose = "";
+let time = "";
+let day = "";
+
 app.post("/book", (req, res) => {
   let name = req.body.pname;
   let email = req.body.email;
   let password = req.body.pass;
-  let purpose = req.body.purpose;
-  let time = req.body.time;
   let hall = req.body.hall;
+  purpose = req.body.purpose;
+  time = req.body.time;
+  day = req.body.day;
 
   Faculty.findOne(
     { name: name, email: email, password: password },
     function (err, docs) {
-      if (err || docs == null) {
+      if (err || docs === null) {
         res.render("error");
-      } else {
-        res.render("updated");
+      } else if (hall) {
+        var pur =
+          "The lecture hall " +
+          hall +
+          " is engaged on " +
+          day +
+          " from " +
+          time +
+          " for " +
+          purpose;
+        let arr = [];
+        arr.push(pur);
+        res.render(hall, { hall: arr });
       }
     }
   );

@@ -1,4 +1,13 @@
 <%- include('partials/header') %>
+<h2>Status Update</h2>
+<% try{ %> 
+<% hall.forEach(function(user){ %>
+<h4 style="color: red"><%= user %></h4>
+<% }); %> 
+<% }catch(err){ %>
+  <h5 style="color: red;">No updates availabel</h5>
+<% } %>
+<br />
 
 <h1>Lecture Hall 2 status</h1>
 <table class="table-1">
@@ -12,6 +21,8 @@
     <th>2:00-3:00</th>
     <th>3:00-4:00</th>
     <th>4:00-5:00</th>
+    <th>5:00-6:00</th>
+    <th>6:00-7:00</th>
   </tr>
   <tr>
     <th>MONDAY</th>
@@ -23,6 +34,8 @@
     <td></td>
     <td>Principles of Marketing (BBA)</td>
     <td>Environmental Studies (BBA)</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <th>TUESDAY</th>
@@ -34,6 +47,8 @@
     <td>Principles of Marketing (BBA)</td>
     <td>Fundamental of Organisational Behaviour (BBA)</td>
     <td>Environmental Studies (BBA)</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <th>WEDNESDAY</th>
@@ -45,6 +60,8 @@
     <td>Fundamental of Organisational Behaviour (BBA)</td>
     <td>Principles of Marketing (BBA)</td>
     <td>Environmental Studies (BBA)</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <th>THURSDAY</th>
@@ -56,6 +73,8 @@
     <td></td>
     <td></td>
     <td>Environmental Studies (BBA)</td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <th>FRIDAY</th>
@@ -65,6 +84,8 @@
     <td></td>
     <td>LUNCH TIME</td>
     <td>Cost and Management Accounting (BBA)</td>
+    <td></td>
+    <td></td>
     <td></td>
     <td></td>
   </tr>
