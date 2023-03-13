@@ -1,3 +1,3 @@
 # Vyakhyan
 
-Made in respect with SMVDU Hackathon 2022
+Made in respect with SMVDU Hackathon/Codethon 2022
